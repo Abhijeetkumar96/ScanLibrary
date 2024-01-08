@@ -1,5 +1,5 @@
 # Prefix Sum Scan Library
-Overview
+## Overview
 
 This C++ library provides template functions for computing prefix sums (also known as scans) on vectors. It supports both inclusive and exclusive scans, and is implemented using C++ templates to work with various data types.
 Features
@@ -9,13 +9,13 @@ Features
     Two modes of operation: with or without an output vector.
     Templated implementation to support different data types.
 
-Requirements
+## Requirements
 
     C++ Compiler with C++11 support or higher.
     STL (Standard Template Library).
 
 ## Usage
-Including the Library
+- Including the Library
 
 ```cpp
     #include "scan.hpp"
@@ -23,19 +23,19 @@ Including the Library
 
 ## Function Templates
 
-    - exclusivePrefixSum
-        -- Computes the exclusive prefix sum of an input vector.
-        -- Syntax: void exclusivePrefixSum(std::vector<T> &arr, std::vector<int> &prefixSum)
+- exclusivePrefixSum
+    -- Computes the exclusive prefix sum of an input vector.
+    -- Syntax: void exclusivePrefixSum(std::vector<T> &arr, std::vector<int> &prefixSum)
 
-    - inclusivePrefixSum
-        -- Computes the inclusive prefix sum of an input vector.
-        -- Syntax: void inclusivePrefixSum(std::vector<T> &arr, std::vector<int> &prefixSum)
+- inclusivePrefixSum
+    -- Computes the inclusive prefix sum of an input vector.
+    -- Syntax: void inclusivePrefixSum(std::vector<T> &arr, std::vector<int> &prefixSum)
 
-    scan
-        Overloaded function for both inclusive and exclusive scans.
-        Syntax:
-            With output vector: void scan<ScanType scanType, typename T>(const std::vector<T>& input, std::vector<T>& output)
-            Without output vector: void scan<ScanType scanType, typename T>(std::vector<T>& input)
+- scan
+    Overloaded function for both inclusive and exclusive scans.
+    Syntax:
+        With output vector: void scan<ScanType scanType, typename T>(const std::vector<T>& input, std::vector<T>& output)
+        Without output vector: void scan<ScanType scanType, typename T>(std::vector<T>& input)
 
 ## Example Usage
 
