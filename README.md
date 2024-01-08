@@ -25,21 +25,21 @@ Features
 
 - exclusivePrefixSum
     Computes the exclusive prefix sum of an input vector.
-    - Syntax: 
+    Syntax: 
     ```cpp
     void exclusivePrefixSum(std::vector<T> &arr, std::vector<int> &prefixSum)
     ```
 
 - inclusivePrefixSum
     Computes the inclusive prefix sum of an input vector.
-    - Syntax: 
+    Syntax: 
     ```cpp
     void inclusivePrefixSum(std::vector<T> &arr, std::vector<int> &prefixSum)
     ```
 
 - scan
     Overloaded function for both inclusive and exclusive scans.
-    - Syntax:
+    Syntax:
     ```cpp
     //With output vector: 
     void scan<ScanType scanType, typename T>(const std::vector<T>& input, std::vector<T>& output)
